@@ -9,7 +9,6 @@
       "channels": 1,
       "bits_per_sample": 16,
       "files": [
-        {"name": "01_dialogue.wav", "path": "pcm_s16le/01_dialogue.wav", "bytes": 14525566, "duration_seconds": 226.960063, "samples": 3631361},
         {"name": "02_pyannote_sample.wav", "path": "pcm_s16le/02_pyannote_sample.wav", "bytes": 960104, "duration_seconds": 30.000000, "samples": 480000},
         {"name": "03_dual_speaker.wav", "path": "pcm_s16le/03_dual_speaker.wav", "bytes": 1920108, "duration_seconds": 60.000000, "samples": 960000},
         {"name": "04_three_speaker.wav", "path": "pcm_s16le/04_three_speaker.wav", "bytes": 1279394, "duration_seconds": 39.973313, "samples": 639573},
@@ -23,6 +22,17 @@
         {"name": "12_mrbeast_schools.wav", "path": "pcm_s16le/12_mrbeast_schools.wav", "bytes": 30853656, "duration_seconds": 964.173813, "samples": 15426781},
         {"name": "13_mrbeast_saved_animals.wav", "path": "pcm_s16le/13_mrbeast_saved_animals.wav", "bytes": 33764104, "duration_seconds": 1055.125313, "samples": 16882005},
         {"name": "14_mrbeast_strongman_robot.wav", "path": "pcm_s16le/14_mrbeast_strongman_robot.wav", "bytes": 35297374, "duration_seconds": 1103.040000, "samples": 17648640}
+      ]
+    },
+    {
+      "codec": "pcm_f32le",
+      "container": "wav",
+      "directory": "pcm_f32le",
+      "sample_rate": 16000,
+      "channels": 1,
+      "bits_per_sample": 32,
+      "files": [
+        {"name": "01_dialogue.wav", "path": "pcm_f32le/01_dialogue.wav", "bytes": 14525566, "duration_seconds": 226.960063, "samples": 3631361}
       ]
     }
   ]

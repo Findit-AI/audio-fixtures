@@ -38,13 +38,11 @@ entry in the manifest.
 
 ## `pcm_s16le/`
 
-Mono 16 kHz `pcm_s16le` WAV — the format every workspace adapter
-decodes natively (FFmpeg's `pcm_s16le` decoder; WebCodecs'
-`"pcm-s16"` codec string).
+Mono 16 kHz `pcm_s16le` WAV — FFmpeg's `pcm_s16le` decoder /
+WebCodecs' `"pcm-s16"` codec string.
 
 | File | Duration | Source |
 | --- | ---: | --- |
-| `01_dialogue.wav` | 3:47 | `dia/01_dialogue/clip_16k.wav` |
 | `02_pyannote_sample.wav` | 0:30 | `dia/02_pyannote_sample/clip_16k.wav` (upstream pyannote sample) |
 | `03_dual_speaker.wav` | 1:00 | `dia/03_dual_speaker/clip_16k.wav` |
 | `04_three_speaker.wav` | 0:40 | `dia/04_three_speaker/clip_16k.wav` |
@@ -59,15 +57,22 @@ decodes natively (FFmpeg's `pcm_s16le` decoder; WebCodecs'
 | `13_mrbeast_saved_animals.wav` | 17:35 | `dia/13_mrbeast_saved_animals/clip_16k.wav` |
 | `14_mrbeast_strongman_robot.wav` | 18:23 | `dia/14_mrbeast_strongman_robot/clip_16k.wav` |
 
-Format invariants for this directory:
+Format invariants for this directory: `pcm_s16le`, 16 kHz, mono,
+16 bits per sample.
 
-- one stream;
-- `pcm_s16le` codec;
-- `16000 Hz` sample rate;
-- `1` channel (mono);
-- `16` bits per sample.
+## `pcm_f32le/`
 
-Tests can hard-code those values rather than re-probe each fixture.
+Mono 16 kHz `pcm_f32le` WAV — FFmpeg's `pcm_f32le` decoder /
+WebCodecs' `"pcm-f32"` codec string. Currently a single clip,
+broken out into its own directory because it differs from the
+`pcm_s16le/` set in bit depth (and therefore byte layout).
+
+| File | Duration | Source |
+| --- | ---: | --- |
+| `01_dialogue.wav` | 3:47 | `dia/01_dialogue/clip_16k.wav` |
+
+Format invariants for this directory: `pcm_f32le`, 16 kHz, mono,
+32 bits per sample.
 
 ## Picking a fixture
 
