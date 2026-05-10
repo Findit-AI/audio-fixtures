@@ -1,25 +1,29 @@
 {
-  "schema_version": 1,
-  "format": {
-    "codec": "pcm_s16le",
-    "sample_rate": 16000,
-    "channels": 1,
-    "bits_per_sample": 16
-  },
-  "files": [
-    {"name": "01_dialogue.wav", "bytes": 14525566, "duration_seconds": 226.960063, "samples": 3631361},
-    {"name": "02_pyannote_sample.wav", "bytes": 960104, "duration_seconds": 30.000000, "samples": 480000},
-    {"name": "03_dual_speaker.wav", "bytes": 1920108, "duration_seconds": 60.000000, "samples": 960000},
-    {"name": "04_three_speaker.wav", "bytes": 1279394, "duration_seconds": 39.973313, "samples": 639573},
-    {"name": "05_four_speaker.wav", "bytes": 1920260, "duration_seconds": 60.000000, "samples": 960000},
-    {"name": "06_long_recording.wav", "bytes": 31287332, "duration_seconds": 977.726688, "samples": 15643627},
-    {"name": "07_yuhewei_dongbei_english.wav", "bytes": 808572, "duration_seconds": 25.263313, "samples": 404213},
-    {"name": "08_luyu_jinjing_freedom.wav", "bytes": 45350722, "duration_seconds": 1417.206750, "samples": 22675308},
-    {"name": "09_mrbeast_dollar_date.wav", "bytes": 33343582, "duration_seconds": 1041.984000, "samples": 16671744},
-    {"name": "10_mrbeast_clean_water.wav", "bytes": 19824052, "duration_seconds": 619.498688, "samples": 9911979},
-    {"name": "11_mrbeast_age_race.wav", "bytes": 45136714, "duration_seconds": 1410.519375, "samples": 22568310},
-    {"name": "12_mrbeast_schools.wav", "bytes": 30853656, "duration_seconds": 964.173813, "samples": 15426781},
-    {"name": "13_mrbeast_saved_animals.wav", "bytes": 33764104, "duration_seconds": 1055.125313, "samples": 16882005},
-    {"name": "14_mrbeast_strongman_robot.wav", "bytes": 35297374, "duration_seconds": 1103.040000, "samples": 17648640}
+  "schema_version": 2,
+  "codecs": [
+    {
+      "codec": "pcm_s16le",
+      "container": "wav",
+      "directory": "pcm_s16le",
+      "sample_rate": 16000,
+      "channels": 1,
+      "bits_per_sample": 16,
+      "files": [
+        {"name": "01_dialogue.wav", "path": "pcm_s16le/01_dialogue.wav", "bytes": 14525566, "duration_seconds": 226.960063, "samples": 3631361},
+        {"name": "02_pyannote_sample.wav", "path": "pcm_s16le/02_pyannote_sample.wav", "bytes": 960104, "duration_seconds": 30.000000, "samples": 480000},
+        {"name": "03_dual_speaker.wav", "path": "pcm_s16le/03_dual_speaker.wav", "bytes": 1920108, "duration_seconds": 60.000000, "samples": 960000},
+        {"name": "04_three_speaker.wav", "path": "pcm_s16le/04_three_speaker.wav", "bytes": 1279394, "duration_seconds": 39.973313, "samples": 639573},
+        {"name": "05_four_speaker.wav", "path": "pcm_s16le/05_four_speaker.wav", "bytes": 1920260, "duration_seconds": 60.000000, "samples": 960000},
+        {"name": "06_long_recording.wav", "path": "pcm_s16le/06_long_recording.wav", "bytes": 31287332, "duration_seconds": 977.726688, "samples": 15643627},
+        {"name": "07_yuhewei_dongbei_english.wav", "path": "pcm_s16le/07_yuhewei_dongbei_english.wav", "bytes": 808572, "duration_seconds": 25.263313, "samples": 404213},
+        {"name": "08_luyu_jinjing_freedom.wav", "path": "pcm_s16le/08_luyu_jinjing_freedom.wav", "bytes": 45350722, "duration_seconds": 1417.206750, "samples": 22675308},
+        {"name": "09_mrbeast_dollar_date.wav", "path": "pcm_s16le/09_mrbeast_dollar_date.wav", "bytes": 33343582, "duration_seconds": 1041.984000, "samples": 16671744},
+        {"name": "10_mrbeast_clean_water.wav", "path": "pcm_s16le/10_mrbeast_clean_water.wav", "bytes": 19824052, "duration_seconds": 619.498688, "samples": 9911979},
+        {"name": "11_mrbeast_age_race.wav", "path": "pcm_s16le/11_mrbeast_age_race.wav", "bytes": 45136714, "duration_seconds": 1410.519375, "samples": 22568310},
+        {"name": "12_mrbeast_schools.wav", "path": "pcm_s16le/12_mrbeast_schools.wav", "bytes": 30853656, "duration_seconds": 964.173813, "samples": 15426781},
+        {"name": "13_mrbeast_saved_animals.wav", "path": "pcm_s16le/13_mrbeast_saved_animals.wav", "bytes": 33764104, "duration_seconds": 1055.125313, "samples": 16882005},
+        {"name": "14_mrbeast_strongman_robot.wav", "path": "pcm_s16le/14_mrbeast_strongman_robot.wav", "bytes": 35297374, "duration_seconds": 1103.040000, "samples": 17648640}
+      ]
+    }
   ]
 }
